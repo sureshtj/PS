@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="63416" started-at="2018-05-03T06:04:34Z" finished-at="2018-05-03T06:05:38Z">
+    <groups>
+    </groups>
+    <test name="Test" duration-ms="63416" started-at="2018-05-03T06:04:34Z" finished-at="2018-05-03T06:05:38Z">
+      <class name="script.TestHomeGeneralPage">
+        <test-method status="PASS" signature="OpenApplication()[pri:0, instance:script.TestHomeGeneralPage@34cd072c]" name="OpenApplication" is-config="true" duration-ms="2887" started-at="2018-05-03T06:04:48Z" finished-at="2018-05-03T06:04:51Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- OpenApplication -->
+        <test-method status="PASS" signature="testHomeGeneral()[pri:2, instance:script.TestHomeGeneralPage@34cd072c]" name="testHomeGeneral" duration-ms="20705" started-at="2018-05-03T06:04:51Z" finished-at="2018-05-03T06:05:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testHomeGeneral -->
+        <test-method status="PASS" signature="CloseApplication()[pri:0, instance:script.TestHomeGeneralPage@34cd072c]" name="CloseApplication" is-config="true" duration-ms="1114" started-at="2018-05-03T06:05:11Z" finished-at="2018-05-03T06:05:13Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CloseApplication -->
+      </class> <!-- script.TestHomeGeneralPage -->
+      <class name="script.RolesPageTest">
+        <test-method status="PASS" signature="OpenApplication()[pri:0, instance:script.RolesPageTest@11438d26]" name="OpenApplication" is-config="true" duration-ms="2787" started-at="2018-05-03T06:05:13Z" finished-at="2018-05-03T06:05:15Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- OpenApplication -->
+        <test-method status="PASS" signature="rolesTab()[pri:3, instance:script.RolesPageTest@11438d26]" name="rolesTab" duration-ms="21111" started-at="2018-05-03T06:05:15Z" finished-at="2018-05-03T06:05:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- rolesTab -->
+        <test-method status="PASS" signature="CloseApplication()[pri:0, instance:script.RolesPageTest@11438d26]" name="CloseApplication" is-config="true" duration-ms="1099" started-at="2018-05-03T06:05:36Z" finished-at="2018-05-03T06:05:38Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CloseApplication -->
+      </class> <!-- script.RolesPageTest -->
+      <class name="script.TestLoginPage">
+        <test-method status="PASS" signature="OpenApplication()[pri:0, instance:script.TestLoginPage@458c1321]" name="OpenApplication" is-config="true" duration-ms="4128" started-at="2018-05-03T06:04:34Z" finished-at="2018-05-03T06:04:38Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- OpenApplication -->
+        <test-method status="PASS" signature="testValidLogin()[pri:1, instance:script.TestLoginPage@458c1321]" name="testValidLogin" duration-ms="8368" started-at="2018-05-03T06:04:38Z" finished-at="2018-05-03T06:04:47Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testValidLogin -->
+        <test-method status="PASS" signature="CloseApplication()[pri:0, instance:script.TestLoginPage@458c1321]" name="CloseApplication" is-config="true" duration-ms="1187" started-at="2018-05-03T06:04:47Z" finished-at="2018-05-03T06:04:48Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CloseApplication -->
+      </class> <!-- script.TestLoginPage -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
