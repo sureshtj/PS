@@ -5,13 +5,12 @@ import java.util.Set;
 import org.testng.annotations.Test;
 import generic.BaseTest;
 import generic.lib;
-import pom.HomePage;
 import pom.LoginPage;
 
 public class TestLoginPage extends BaseTest {
 	
 	
-	@Test(priority=1)
+	@Test(testName = "Login",priority=1,enabled=true)
 	  public void testValidLogin() throws InterruptedException{
 		Set<String> allWHS = driver.getWindowHandles();
 		
@@ -30,7 +29,7 @@ public class TestLoginPage extends BaseTest {
 		  p.setUsername(un);
 		  p.setPassword(pw);
 		  p.clickLogin();
-		  System.out.println("hi");
+		  p.verifyHomePageisDisplayed();
 				  }	  
 		
 				  }

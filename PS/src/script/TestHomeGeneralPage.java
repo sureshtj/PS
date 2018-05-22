@@ -10,7 +10,7 @@ import pom.HomePageGeneralTab;
 import pom.LoginPage;
 
 public class TestHomeGeneralPage extends BaseTest {
-	
+	public static int rc=lib.getRowCount(XL_PATH,"Sheet1");
 	@Test(priority=2)
 	public void testHomeGeneral() {
 		Set<String> allWHS = driver.getWindowHandles();
@@ -19,7 +19,7 @@ public class TestHomeGeneralPage extends BaseTest {
 		{
 		driver.switchTo().window(wh);
 		}
-			  int rc=lib.getRowCount(XL_PATH,"Sheet1");
+			  
 			  for(int i=1;i<=rc;i++)
 			  {
 			  String un = lib.getCellValue(XL_PATH, "Sheet1",i, 0);
@@ -30,6 +30,7 @@ public class TestHomeGeneralPage extends BaseTest {
 	  p.setPassword(pw);
 	  p.clickLogin();
 			  }
+	
 		for(int i=1;i<=rc;i++)
 		{
 			String countryname=lib.getCellValue(XL_PATH, "Sheet1",i,4);
@@ -47,8 +48,8 @@ public class TestHomeGeneralPage extends BaseTest {
 			ht.taxId(taxidinfo);
 			ht.Save();
 		}
-		
+			  }
 	}
-	
 
-}
+
+

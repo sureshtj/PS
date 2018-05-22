@@ -3,20 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="script.TestHomeGeneralPage">
+      <class name="script.TestLoginPage">
         <methods>
           <include name="CloseApplication"/>
           <include name="OpenApplication"/>
-          <include name="testHomeGeneral"/>
+          <include name="testValidLogin"/>
         </methods>
-      </class> <!-- script.TestHomeGeneralPage -->
-      <class name="script.RolesPageTest">
-        <methods>
-          <include name="CloseApplication"/>
-          <include name="OpenApplication"/>
-          <include name="rolesTab"/>
-        </methods>
-      </class> <!-- script.RolesPageTest -->
+      </class> <!-- script.TestLoginPage -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

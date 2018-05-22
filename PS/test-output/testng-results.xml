@@ -1,49 +1,65 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
+<testng-results skipped="0" failed="1" ignored="0" total="1" passed="0">
   <reporter-output>
+    <line>
+      <![CDATA[FAIL : Home page is not displayed]]>
+    </line>
   </reporter-output>
-  <suite name="Suite" duration-ms="63416" started-at="2018-05-03T06:04:34Z" finished-at="2018-05-03T06:05:38Z">
+  <suite name="Suite" duration-ms="154200" started-at="2018-05-21T05:01:13Z" finished-at="2018-05-21T05:03:47Z">
     <groups>
     </groups>
-    <test name="Test" duration-ms="63416" started-at="2018-05-03T06:04:34Z" finished-at="2018-05-03T06:05:38Z">
-      <class name="script.TestHomeGeneralPage">
-        <test-method status="PASS" signature="OpenApplication()[pri:0, instance:script.TestHomeGeneralPage@34cd072c]" name="OpenApplication" is-config="true" duration-ms="2887" started-at="2018-05-03T06:04:48Z" finished-at="2018-05-03T06:04:51Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- OpenApplication -->
-        <test-method status="PASS" signature="testHomeGeneral()[pri:2, instance:script.TestHomeGeneralPage@34cd072c]" name="testHomeGeneral" duration-ms="20705" started-at="2018-05-03T06:04:51Z" finished-at="2018-05-03T06:05:11Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testHomeGeneral -->
-        <test-method status="PASS" signature="CloseApplication()[pri:0, instance:script.TestHomeGeneralPage@34cd072c]" name="CloseApplication" is-config="true" duration-ms="1114" started-at="2018-05-03T06:05:11Z" finished-at="2018-05-03T06:05:13Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- CloseApplication -->
-      </class> <!-- script.TestHomeGeneralPage -->
-      <class name="script.RolesPageTest">
-        <test-method status="PASS" signature="OpenApplication()[pri:0, instance:script.RolesPageTest@11438d26]" name="OpenApplication" is-config="true" duration-ms="2787" started-at="2018-05-03T06:05:13Z" finished-at="2018-05-03T06:05:15Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- OpenApplication -->
-        <test-method status="PASS" signature="rolesTab()[pri:3, instance:script.RolesPageTest@11438d26]" name="rolesTab" duration-ms="21111" started-at="2018-05-03T06:05:15Z" finished-at="2018-05-03T06:05:36Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- rolesTab -->
-        <test-method status="PASS" signature="CloseApplication()[pri:0, instance:script.RolesPageTest@11438d26]" name="CloseApplication" is-config="true" duration-ms="1099" started-at="2018-05-03T06:05:36Z" finished-at="2018-05-03T06:05:38Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- CloseApplication -->
-      </class> <!-- script.RolesPageTest -->
+    <test name="Test" duration-ms="154200" started-at="2018-05-21T05:01:13Z" finished-at="2018-05-21T05:03:47Z">
       <class name="script.TestLoginPage">
-        <test-method status="PASS" signature="OpenApplication()[pri:0, instance:script.TestLoginPage@458c1321]" name="OpenApplication" is-config="true" duration-ms="4128" started-at="2018-05-03T06:04:34Z" finished-at="2018-05-03T06:04:38Z">
+        <test-method status="PASS" signature="OpenApplication()[pri:0, instance:script.TestLoginPage@1877ab81]" name="OpenApplication" is-config="true" duration-ms="3847" started-at="2018-05-21T05:01:13Z" finished-at="2018-05-21T05:01:17Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- OpenApplication -->
-        <test-method status="PASS" signature="testValidLogin()[pri:1, instance:script.TestLoginPage@458c1321]" name="testValidLogin" duration-ms="8368" started-at="2018-05-03T06:04:38Z" finished-at="2018-05-03T06:04:47Z">
+        <test-method status="FAIL" signature="testValidLogin()[pri:1, instance:script.TestLoginPage@1877ab81]" name="testValidLogin" duration-ms="149211" started-at="2018-05-21T05:01:17Z" finished-at="2018-05-21T05:03:46Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: null
+at org.testng.Assert.fail(Assert.java:96)
+at org.testng.Assert.fail(Assert.java:103)
+at pom.LoginPage.verifyHomePageisDisplayed(LoginPage.java:59)
+at script.TestLoginPage.testValidLogin(TestLoginPage.java:32)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
+            <line>
+              <![CDATA[FAIL : Home page is not displayed]]>
+            </line>
           </reporter-output>
         </test-method> <!-- testValidLogin -->
-        <test-method status="PASS" signature="CloseApplication()[pri:0, instance:script.TestLoginPage@458c1321]" name="CloseApplication" is-config="true" duration-ms="1187" started-at="2018-05-03T06:04:47Z" finished-at="2018-05-03T06:04:48Z">
+        <test-method status="PASS" signature="CloseApplication()[pri:0, instance:script.TestLoginPage@1877ab81]" name="CloseApplication" is-config="true" duration-ms="1111" started-at="2018-05-21T05:03:46Z" finished-at="2018-05-21T05:03:47Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- CloseApplication -->
