@@ -57,9 +57,9 @@ function toggleAllBoxes() {
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Mon May 21 10:31:13 IST 2018</td>
+<td>Started on:</td><td>Fri May 25 14:33:18 IST 2018</td>
 </tr>
-<tr><td>Total time:</td><td>154 seconds (154200 ms)</td>
+<tr><td>Total time:</td><td>37 seconds (37263 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -76,21 +76,53 @@ function toggleAllBoxes() {
 </tr>
 <tr>
 <td title='script.TestLoginPage.testValidLogin()'><b>testValidLogin</b><br>Test class: script.TestLoginPage<br/>
-<a href="#Output-460570271" onClick='toggleBox("Output-460570271", this, "Show output", "Hide output");'>Show output</a>
+<a href="#Output-768216420" onClick='toggleBox("Output-768216420", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-460570271" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-460570271">
+<a href="#Output-768216420" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-768216420">
 FAIL : Home page is not displayed<br/>
 </div>
 </td>
-<td><div><pre>java.lang.AssertionError: null
-	at pom.LoginPage.verifyHomePageisDisplayed(LoginPage.java:59)
+<td><div><pre>org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=66.0.3359.181)
+  (Driver info: chromedriver=2.37.544315 (730aa6a5fdba159ac9f4c1e8cbc59bf1b5ce12b7),platform=Windows NT 10.0.15063 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 8 milliseconds
+Build info: version: &apos;3.4.0&apos;, revision: &apos;unknown&apos;, time: &apos;unknown&apos;
+System info: host: &apos;INLT1260&apos;, ip: &apos;10.21.31.190&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_151&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.37.544315 (730aa6a5fdba159ac9f4c1e8cbc59bf1b5ce12b7), userDataDir=C:\Users\SURESH~1.J\AppData\Local\Temp\scoped_dir21392_18263}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=66.0.3359.181, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=false, acceptInsecureCerts=false, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=}]
+Session ID: 4b399912cbdc2dadff5c3ffd297f26e7
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:215)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:167)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:671)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:694)
+	at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:382)
+	at generic.BaseTest.takesScreenShot(BaseTest.java:67)
+	at pom.LoginPage.verifyHomePageisDisplayed(LoginPage.java:58)
 	at script.TestLoginPage.testValidLogin(TestLoginPage.java:32)
-... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace460570271", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace460570271'><pre>java.lang.AssertionError: null
-	at org.testng.Assert.fail(Assert.java:96)
-	at org.testng.Assert.fail(Assert.java:103)
-	at pom.LoginPage.verifyHomePageisDisplayed(LoginPage.java:59)
+... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace768216420", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace768216420'><pre>org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=66.0.3359.181)
+  (Driver info: chromedriver=2.37.544315 (730aa6a5fdba159ac9f4c1e8cbc59bf1b5ce12b7),platform=Windows NT 10.0.15063 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 8 milliseconds
+Build info: version: &apos;3.4.0&apos;, revision: &apos;unknown&apos;, time: &apos;unknown&apos;
+System info: host: &apos;INLT1260&apos;, ip: &apos;10.21.31.190&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_151&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.37.544315 (730aa6a5fdba159ac9f4c1e8cbc59bf1b5ce12b7), userDataDir=C:\Users\SURESH~1.J\AppData\Local\Temp\scoped_dir21392_18263}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=66.0.3359.181, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=false, acceptInsecureCerts=false, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=}]
+Session ID: 4b399912cbdc2dadff5c3ffd297f26e7
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:215)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:167)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:671)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:694)
+	at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:382)
+	at generic.BaseTest.takesScreenShot(BaseTest.java:67)
+	at pom.LoginPage.verifyHomePageisDisplayed(LoginPage.java:58)
 	at script.TestLoginPage.testValidLogin(TestLoginPage.java:32)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
@@ -118,7 +150,7 @@ FAIL : Home page is not displayed<br/>
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
-<td>149</td>
+<td>31</td>
 <td>script.TestLoginPage@1877ab81</td></tr>
 </table><p>
 </body>

@@ -49,7 +49,7 @@
               <ul>
                 <li>
                   <a href="#" class="navigator-link " panel-name="test-xml-Suite">
-                    <span>D:\Git\PS\testng.xml</span>
+                    <span>C:\Users\suresha.t.j\Documents\GitHub\PS\PS\testng.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -128,10 +128,25 @@
                   <a name="testValidLogin">
                   </a> <!-- testValidLogin -->
                   <span class="method-name">testValidLogin</span>
-                  <div class="stack-trace">java.lang.AssertionError: null
-	at pom.LoginPage.verifyHomePageisDisplayed(LoginPage.java:59)
+                  <div class="stack-trace">org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=66.0.3359.181)
+  (Driver info: chromedriver=2.37.544315 (730aa6a5fdba159ac9f4c1e8cbc59bf1b5ce12b7),platform=Windows NT 10.0.15063 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 8 milliseconds
+Build info: version: &apos;3.4.0&apos;, revision: &apos;unknown&apos;, time: &apos;unknown&apos;
+System info: host: &apos;INLT1260&apos;, ip: &apos;10.21.31.190&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_151&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.37.544315 (730aa6a5fdba159ac9f4c1e8cbc59bf1b5ce12b7), userDataDir=C:\Users\SURESH~1.J\AppData\Local\Temp\scoped_dir21392_18263}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=66.0.3359.181, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=false, acceptInsecureCerts=false, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=}]
+Session ID: 4b399912cbdc2dadff5c3ffd297f26e7
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:215)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:167)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:671)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:694)
+	at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:382)
+	at generic.BaseTest.takesScreenShot(BaseTest.java:67)
+	at pom.LoginPage.verifyHomePageisDisplayed(LoginPage.java:58)
 	at script.TestLoginPage.testValidLogin(TestLoginPage.java:32)
-... Removed 27 stack frames
+... Removed 29 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
@@ -140,7 +155,7 @@
         </div> <!-- panel Suite -->
         <div panel-name="test-xml-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">D:\Git\PS\testng.xml</span>
+            <span class="header-content">C:\Users\suresha.t.j\Documents\GitHub\PS\PS\testng.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -193,12 +208,12 @@ data.addRows(1);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'testValidLogin')
 data.setCell(0, 2, 'script.TestLoginPage')
-data.setCell(0, 3, 149211);
+data.setCell(0, 3, 31774);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 2 minutes</span>
+              <span class="suite-total-time">Total running time: 31 seconds</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -239,11 +254,11 @@ return data;
                 <img src="failed.png">
                 </img>
                 <span class="method-name">testValidLogin</span>
-                <span class="method-start">3847 ms</span>
+                <span class="method-start">4260 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">CloseApplication</span>
-                <span class="method-start">153073 ms</span>
+                <span class="method-start">36038 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
